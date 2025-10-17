@@ -69,11 +69,13 @@
         }
         
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;  /* AÑADE ESTO */
+    display: block;      /* Y ESTO */
+}
         
         .hero-subtitle {
             font-size: 1.5rem;
@@ -372,7 +374,31 @@
                 width: 100%;
                 max-width: 100%;
             }
-        }
+        }.step {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 1.2;
+        word-break: break-word;
+        display: block;
+    }
+
+    .hero-section h1 br {
+        display: block; /* mantiene el salto natural */
+    }
+}
+
+
+</style>
+</head>
+<body>
+
     </style>
 </head>
 <body>
@@ -382,7 +408,7 @@
             <div class="logo">
                 <i class="fas fa-crown"></i>
             </div>
-            <h1>NUEVA GENERACIÓN EMPRENDEDORA</h1>
+<h1>NUEVA GENERACIÓN<br>EMPRENDEDORA</h1>       
             <p class="hero-subtitle">El primer club de emprendedores donde tu éxito es nuestro compromiso. No solo te ofrecemos una oportunidad, te brindamos un camino probado hacia tu libertad financiera.</p>
             <a href="#unete" class="cta-button">ÚNETE AL CLUB EXCLUSIVO</a>
             <div class="guarantee-badge">MÉTODO COMPROBADO DESDE 2008</div>
@@ -623,3 +649,6 @@
     </script>
 </body>
 </html>
+
+
+
